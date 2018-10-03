@@ -1,11 +1,40 @@
+<?php header("Access-Control-Allow-Origin: http://holidayapi.com"); ?>
 <html>
     <head>
         
+        <script
+        src="http://code.jquery.com/jquery-3.2.1.min.js">
+        </script>
+        
     </head>
     <body>
-        
+        <form>
+        Enter A Utah City: <input type="text" id="cityField" value=""><br>
+        Suggestion: <div class=column><span id="txtHint"></span>
+        </div>
+        <input id="weatherButton" type="submit" value="Submit">
+        </form>
     <script>
+    //Access-Control-Allow-Origin: "https://holidayapi.com/";
+    var country="us";
+    $(document).ready(function(){
+        $("#cityField").keyup(function(){
+            console.log("keyup notified");
+        var url="https://holidayapi.com/v1/holidays?&key=7f1ed9ac-b8bc-4380-adb9-bdf78e5ace25&country=US&year=2017";
+        $.getJSON(url,function(data) {
+            console.log(data);
+        })
+        //$.ajax({
+        //    dataType: "jsonp",
+        //    url: url,
+        //    data: data,
+        //    success: success
+        //});
+        //  console.log(data); 
         
+        console.log("should have grabbed");
+        });
+    });
     </script>
     </body>
 </html>
