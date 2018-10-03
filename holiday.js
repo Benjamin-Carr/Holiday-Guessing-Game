@@ -1,12 +1,14 @@
 /* global $ */
 $(document).ready(function() {
     var url = "https://holidayapi.com/v1/holidays?&key=7f1ed9ac-b8bc-4380-adb9-bdf78e5ace25&year=2017&country=US";
-    var dateArray=[]   
+    var dateArray=[0,1]
     $.getJSON(url,function(data) {
         var everything;
         everything = "<h4>These are all the holidays:</h4>";
         everything += "<ul>";
         for(x in data["holidays"]) {
+            console.log(x);
+            console.log("hello")
             dateArray.push(x);
             everything += "<li>" + x + "</li>";
             everything += "<ul>";
@@ -37,6 +39,8 @@ $(document).ready(function() {
         $.getJSON(url,function(data){
             var randomNum=getRandomInt(dateArray.length);
             console.log(randomNum)
+            console.log(dateArray.length)
+            console.log(dateArray[randomNum])
             console.log(data["holidays"][dateArray[randomNum]][0]["name"])
             HolidayName=data["holidays"][dateArray[randomNum]][0]["name"];
             console.log(HolidayName)
