@@ -41,9 +41,18 @@
     width:45%;
 }
 .monthclick{
+    position:relative;
+    text-align: center;
     width:24%;
-    height:50px;
+    height:100px;
     outline: 5px solid royalblue;
     float:left;
     padding:5px;
+}
+.monthname{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: -.5px 0 white, 0 .5px white, .5px 0 white, 0 -.5px white;
 }

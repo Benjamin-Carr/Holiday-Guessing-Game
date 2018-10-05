@@ -1,8 +1,8 @@
 /* global $ */
+var monthGuess="";
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 $(document).ready(function() {
     var dateArray = [];
-    var monthGuess="";
-    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
     var url = "https://holidayapi.com/v1/holidays?&key=7f1ed9ac-b8bc-4380-adb9-bdf78e5ace25&year=2017&country=US";
     var HolidayName;
     var HolidayMonth;
@@ -16,7 +16,7 @@ $(document).ready(function() {
         return Math.floor(Math.random() * Math.floor(max));
     }
     $("#newGameButton").click(function(e) {
-        $("#congrats").style.width="0"
+        //$("#congrats").style.width="0"
         e.preventDefault();
         console.log("click recieved")
         $.getJSON(url, function(data) {
@@ -45,12 +45,10 @@ $(document).ready(function() {
             console.log(" -" + value + "- -" + HolidayMonth + "- ")
         }
     })
-    function changeMonthGuess(x){
-        monthGuess=months[x];
-        console.log(monthGuess)
-    }
-    function setJanuary(){
-        monthGuess=months[0];
-    }
+   
 });
+function changeMonthGuess(x){
+    monthGuess=months[x];
+    console.log(monthGuess)
+}
 

@@ -61,15 +61,61 @@
                 <p>Holiday:</p>
                 <div id="Holiday">Press New Game to start</div>
             </div>
+            <div class="containerMiddle">
+                <input id="submitButton" type="submit" value="Submit">
+            </div>
             <div class="containerRight">
+                <div class="monthclick">
+                    <img src=months.jpg onclick=changeMonthGuess(0) width=100% style="cursor:pointer">
+                    <div class=monthname>January</div>
+                </div>
+                <div class="monthclick">
+                    <img src=months.jpg onclick=changeMonthGuess(1) width=100% style="cursor:pointer">
+                    <div class=monthname>February</div>
+                </div>
+                <div class="monthclick">
+                    <img src=months.jpg onclick=changeMonthGuess(2) width=100% style="cursor:pointer">
+                    <div class=monthname>March</div>
+                </div>
+                <div class="monthclick">
+                    <img src=months.jpg onclick=changeMonthGuess(3) width=100% style="cursor:pointer">
+                    <div class=monthname>April</div>
+                </div>
+                <div class="monthclick">
+                    <img src=months.jpg onclick=changeMonthGuess(4) width=100% style="cursor:pointer">
+                    <div class=monthname>May</div>
+                </div>
+                <div class="monthclick">
+                    <img src=months.jpg onclick=changeMonthGuess(5) width=100% style="cursor:pointer">
+                    <div class=monthname>June</div>
+                </div>
+                <div class="monthclick">
+                    <img src=months.jpg onclick=changeMonthGuess(6) width=100% style="cursor:pointer">
+                    <div class=monthname>July</div>
+                </div>
+                <div class="monthclick">
+                    <img src=months.jpg onclick=changeMonthGuess(7) width=100% style="cursor:pointer">
+                    <div class=monthname>August</div>
+                </div>
+                <div class="monthclick">
+                    <img src=months.jpg onclick=changeMonthGuess(8) width=100% style="cursor:pointer">
+                    <div class=monthname>September</div>
+                </div>
+                <div class="monthclick">
+                    <img src=months.jpg onclick=changeMonthGuess(9) width=100% style="cursor:pointer">
+                    <div class=monthname>October</div>
+                </div>
+                <div class="monthclick">
+                    <img src=months.jpg onclick=changeMonthGuess(10) width=100% style="cursor:pointer">
+                    <div class=monthname>November</div>
+                </div>
+                <div class="monthclick">
+                    <img src=months.jpg onclick=changeMonthGuess(11) width=100% style="cursor:pointer">
+                    <div class=monthname>December</div>
+                </div>
                 <form>
-                    Enter A Month Guess: <input type="text" id="monthField" value=""><br>
-                    <input id="submitButton" type="submit" value="Submit">
+                    Or Enter A Month Guess: <input type="text" id="monthField" value=""><br>
                 </form>
-                <div class="monthclick"><p onclick=changeMonthGuess(0)>January</p></div>
-                <div class="monthclick" onclick=changeMonthGuess(1)>February</div>
-                <div class="monthclick" onclick=changeMonthGuess(2)>March</div>
-                <div class="monthclick" onclick=changeMonthGuess(3)>April</div>
             </div>
             <div id="responseToGame"></div>
         </div>
