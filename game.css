@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+.container{
+    position:relative;
+    width:100%;
+}
+.container:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+.containerLeft{
+    position:relative;
+    text-align: center;
+    color: black;
+    width:35%;
+    float:left;
+}
+.containerRight{
+    float:left;
+    width:50%;
+}
+.containerMiddle{
+    float:left;
+    width:13%;
+}
+.content{
+    height:100px;
+    width:100%;
+    text-align: right;
+}
+.words{
+    text-align:center;
+    float:left;
+    width:45%;
+}
+.button{
+    text-align: right;
+    float:right;
+    width:45%;
+}
+.monthclick{
+    width:24%;
+    height:50px;
+    outline: 5px solid royalblue;
+    float:left;
+    padding:5px;
+}
