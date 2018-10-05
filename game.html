@@ -47,11 +47,10 @@
         <div class="content">
             <div class="words">
                 <h1>Guessing Game</h1>
-                <p id="countrytag">USA 2017</p>
             </div>
             
                 <form>
-                <input id="newGameButton" type="submit" value="NewGame"><br>
+                New Game<input id="newGameButton" type="submit" value="Easy"><input id="hard" type="submit" value="Very Hard"><br>
                 <p id="score"></p>
                 </form>
             
@@ -61,9 +60,11 @@
                 <h4>Holiday:</h4>
                 <p id="holiday-counter"></p>
                 <h3 id="Holiday">Press New Game to start</h3>
+                <div id="responseToGame"></div>
             </div>
             <div class="containerMiddle">
                 <input id="submitButton" type="submit" value="Submit">
+                <p id="currentScore"></p>
             </div>
             <div class="containerRight">
                 <div class="monthclick">
@@ -118,7 +119,6 @@
                     Or Enter A Month Guess: <input type="text" id="monthField" value=""><br>
                 </form>
             </div>
-            <div id="responseToGame"></div>
         </div>
     </div>
 </body>
