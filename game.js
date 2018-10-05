@@ -1,7 +1,7 @@
 /* global $ */
 var monthGuess = "";
 var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-var countries=[["US","US"],["AO","Angola"],["AT","Austria"],["AX","Aland Island"],["BG","Bulgaria"],["CN","China"],["CZ","Czech Republic"],["CR","Costa Rica"],["DE","Germany"],["FI","Finland"],["GB","Great Britan"],["HU","Hungary"],["HR","Croatia"],["GR","Greece"],["ID","Indonesia"],["IN","India"],["KZ","Kazakhstan"],["RO","Romania"],["SC","Seychelles"],["SG","Singapore"],["MZ","Mozambique"],["ZA","South Africa"],["ZW","Simbabwe"],["UA","Ukraine"]]
+var countries=[["US","US"],["AO","Angola"],["AT","Austria"],["AX","Aland Island"],["BG","Bulgaria"],["CN","China"],["CZ","Czech Republic"],["CR","Costa Rica"],["DE","Germany"],["FI","Finland"],["GB","Great Britan"],["HU","Hungary"],["HR","Croatia"],["GR","Greece"],["ID","Indonesia"],["IN","India"],["KZ","Kazakhstan"],["RO","Romania"],["SC","Seychelles"],["SG","Singapore"],["MZ","Mozambique"],["ZA","South Africa"],["ZW","Zimbabwe"],["UA","Ukraine"]]
 var ifHard = 0;
 var times;
 var numbersUsed = [];
