@@ -75,7 +75,7 @@ $(document).ready(function() {
             })
         }
     }
-    $("#submitButton").click(function(e) {
+    $(".monthclick").click(function(e) {
         e.preventDefault();
         var value = $("#monthField").val();
         console.log(value + " " + HolidayMonth)

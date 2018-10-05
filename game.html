@@ -28,8 +28,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="holiday.html">Holiday Guessing Game</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
@@ -48,75 +48,85 @@
             <div class="words">
                 <h1>Guessing Game</h1>
             </div>
-            
-                <form>
-                New Game<input id="newGameButton" type="submit" value="Easy"><input id="hard" type="submit" value="Very Hard"><br>
-                <p id="score"></p>
-                </form>
-            
+            <form>
+                <p>Select Game Mode</p>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label id="newGameButton" class="btn btn-secondary active">
+                        <input type="radio" name="options" value="easy" autocomplete="off"> Easy
+                    </label>
+                    <label id="hard" class="btn btn-secondary">
+                        <input type="radio" name="options" value="Very Hard" autocomplete="off"> Very Hard
+                    </label>
+                </div>
+
+
+            </form>
+            <p id="score"></p>
         </div>
         <div class="container">
-            <div class="containerLeft">
+            <div>
                 <h4>Holiday:</h4>
-                <p id="holiday-counter"></p>
-                <h3 id="Holiday">Press New Game to start</h3>
+                
                 <div id="responseToGame"></div>
+                <h3 id="Holiday">Select Game Mode to Start</h3>
+                <p id="holiday-counter"></p>
+                
             </div>
-            <div class="containerMiddle">
-                <input id="submitButton" type="submit" value="Submit">
+            <div>
+                <!--<input id="submitButton" class="invisible" type="submit" value="Submit">-->
                 <p id="currentScore"></p>
             </div>
-            <div class="containerRight">
-                <div class="monthclick">
-                    <img src=months.jpg onclick=changeMonthGuess(0) width=100% style="cursor:pointer">
+            <div>
+                <div class="monthclick" onclick=changeMonthGuess(0)>
+                    <img src=months.jpg width=100% style="cursor:pointer">
                     <div class=monthname>January</div>
                 </div>
-                <div class="monthclick">
-                    <img src=months.jpg onclick=changeMonthGuess(1) width=100% style="cursor:pointer">
+                <div class="monthclick" onclick=changeMonthGuess(1)>
+                    <img src=months.jpg width=100% style="cursor:pointer">
                     <div class=monthname>February</div>
                 </div>
-                <div class="monthclick">
-                    <img src=months.jpg onclick=changeMonthGuess(2) width=100% style="cursor:pointer">
+                <div class="monthclick" onclick=changeMonthGuess(2)>
+                    <img src=months.jpg width=100% style="cursor:pointer">
                     <div class=monthname>March</div>
                 </div>
-                <div class="monthclick">
-                    <img src=months.jpg onclick=changeMonthGuess(3) width=100% style="cursor:pointer">
+                <div class="monthclick" onclick=changeMonthGuess(3)>
+                    <img src=months.jpg width=100% style="cursor:pointer">
                     <div class=monthname>April</div>
                 </div>
-                <div class="monthclick">
-                    <img src=months.jpg onclick=changeMonthGuess(4) width=100% style="cursor:pointer">
+                <div class="monthclick" onclick=changeMonthGuess(4)>
+                    <img src=months.jpg width=100% style="cursor:pointer">
                     <div class=monthname>May</div>
                 </div>
-                <div class="monthclick">
-                    <img src=months.jpg onclick=changeMonthGuess(5) width=100% style="cursor:pointer">
+                <div class="monthclick" onclick=changeMonthGuess(5)>
+                    <img src=months.jpg width=100% style="cursor:pointer">
                     <div class=monthname>June</div>
                 </div>
-                <div class="monthclick">
-                    <img src=months.jpg onclick=changeMonthGuess(6) width=100% style="cursor:pointer">
+                <div class="monthclick" onclick=changeMonthGuess(6)>
+                    <img src=months.jpg width=100% style="cursor:pointer">
                     <div class=monthname>July</div>
                 </div>
-                <div class="monthclick">
-                    <img src=months.jpg onclick=changeMonthGuess(7) width=100% style="cursor:pointer">
+                <div class="monthclick" onclick=changeMonthGuess(7)>
+                    <img src=months.jpg width=100% style="cursor:pointer">
                     <div class=monthname>August</div>
                 </div>
-                <div class="monthclick">
-                    <img src=months.jpg onclick=changeMonthGuess(8) width=100% style="cursor:pointer">
+                <div class="monthclick" onclick=changeMonthGuess(8)>
+                    <img src=months.jpg width=100% style="cursor:pointer">
                     <div class=monthname>September</div>
                 </div>
-                <div class="monthclick">
-                    <img src=months.jpg onclick=changeMonthGuess(9) width=100% style="cursor:pointer">
+                <div class="monthclick" onclick=changeMonthGuess(9)>
+                    <img src=months.jpg width=100% style="cursor:pointer">
                     <div class=monthname>October</div>
                 </div>
-                <div class="monthclick">
-                    <img src=months.jpg onclick=changeMonthGuess(10) width=100% style="cursor:pointer">
+                <div class="monthclick" onclick=changeMonthGuess(10)>
+                    <img src=months.jpg width=100% style="cursor:pointer">
                     <div class=monthname>November</div>
                 </div>
-                <div class="monthclick">
-                    <img src=months.jpg onclick=changeMonthGuess(11) width=100% style="cursor:pointer">
+                <div class="monthclick" onclick=changeMonthGuess(11)>
+                    <img src=months.jpg width=100% style="cursor:pointer">
                     <div class=monthname>December</div>
                 </div>
-                <form>
-                    Or Enter A Month Guess: <input type="text" id="monthField" value=""><br>
+                <form class="invisible">
+                    Enter A Month Guess: <input type="text" id="monthField" value=""><br>
                 </form>
             </div>
         </div>
