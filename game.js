@@ -16,6 +16,7 @@ $(document).ready(function() {
         return Math.floor(Math.random() * Math.floor(max));
     }
     $("#newGameButton").click(function(e) {
+        $("#monthField").val("");
         //$("#congrats").style.width="0"
         e.preventDefault();
         console.log("click recieved")
@@ -50,5 +51,6 @@ $(document).ready(function() {
 function changeMonthGuess(x){
     monthGuess=months[x];
     console.log(monthGuess)
+    $("#monthField").val(monthGuess);
 }
 

@@ -23,7 +23,7 @@
 }
 .containerMiddle{
     float:left;
-    width:13%;
+    width:15%;
 }
 .content{
     height:100px;
@@ -55,4 +55,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: -.5px 0 white, 0 .5px white, .5px 0 white, 0 -.5px white;
+}
+h3{
+    color:red;
 }
